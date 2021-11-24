@@ -12,12 +12,17 @@ int main(){
     int array[size];
 
     cout << "\nWhat are the values for each index? \n";
-    for (int i=0; i<size; i++){
+    for (int i=0; i<size; i++) {
         cin >> array[i];
     }
 
-    for (int i=0; i<size; i++){
+    for (int i=0; i<size; i++) {
         sum += array[i];
+    }
+
+    cout << "\nThe values of each index is: ";
+    for (int i = 0; i<size; i++) {
+        cout << array [i] << " ";
     }
     cout << "\nThe sum of values in the array is: " << sum;
 }
